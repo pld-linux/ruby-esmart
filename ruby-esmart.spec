@@ -2,6 +2,7 @@
 %define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
 %define ruby_rubylibdir %(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
 Summary:	Ruby binding to the esmart library
+Summary(pl):	Dowi±zania jêzyka ruby do biblioteki esmart
 Name:		ruby-esmart
 Version:	0
 Release:	1
@@ -18,17 +19,10 @@ Requires:	ruby
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Ruby binding to the Evas library.
+Ruby binding to the esmart library.
 
-%if 0
-%package devel
-Summary: Header files for ruby-esmart
-Group:	Development/Libraries
-Requires: %{name} = %{epoch}:%{version}-%{release}
-
-%description devel
-Header files for ruby-esmart.
-%endif
+%description -l pl
+Dowi±zania jêzyka ruby do biblioteki esmart.
 
 %prep
 %setup -q -n ruby-esmart
@@ -47,9 +41,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{ruby_archdir}/*.so
-
-%if 0
-%files devel
-#%{ruby_archdir}/esmart
-%endif
+%attr(755,root,root) %{ruby_archdir}/*.so
