@@ -1,5 +1,5 @@
 Summary:	Ruby binding to the esmart library
-Summary(pl):	Dowi±zania jêzyka ruby do biblioteki esmart
+Summary(pl.UTF-8):   DowiÄ…zania jÄ™zyka ruby do biblioteki esmart
 Name:		ruby-esmart
 Version:	0
 Release:	2
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Ruby binding to the esmart library.
 
-%description -l pl
-Dowi±zania jêzyka ruby do biblioteki esmart.
+%description -l pl.UTF-8
+DowiÄ…zania jÄ™zyka ruby do biblioteki esmart.
 
 %prep
 %setup -q -n %{name}
