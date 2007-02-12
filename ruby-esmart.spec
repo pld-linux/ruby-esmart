@@ -1,5 +1,5 @@
 Summary:	Ruby binding to the esmart library
-Summary(pl.UTF-8):   Dowiązania języka ruby do biblioteki esmart
+Summary(pl.UTF-8):	Dowiązania języka ruby do biblioteki esmart
 Name:		ruby-esmart
 Version:	0
 Release:	2
