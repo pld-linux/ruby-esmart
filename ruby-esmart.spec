@@ -7,7 +7,7 @@ License:	Ruby's
 Group:		Development/Languages
 Source0:	%{name}.tar.gz
 # Source0-md5:	6cfc22dba679839fc2b6ab88314b9647
-URL:		http://code-monkey.de/projects/ruby-efl.html
+URL:		http://code-monkey.de/pages/ruby-efl
 BuildRequires:	esmart-devel
 BuildRequires:	rake
 BuildRequires:	rpmbuild(macros) >= 1.277
